@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "369e1f79-5611-4aef-86da-8c7e704d43c1",
+		"name": "testiner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Details about a user",
+			"id": "ec680763-6f4e-4149-ad50-c572fb3aad68",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/vinit?id=53396132",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"vinit"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "53396132",
+							"description": "(Required) ID of the user"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "9425169f-1673-40f4-9e44-933bd8d1068c",
+					"name": "Details about a user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/vinit?id=53396132",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vinit"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "53396132"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"description": "A link to the next page of responses",
+							"key": "x-next",
+							"value": "irure do quis aute"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"id\": 52801264,\n  \"name\": \"quis anim cupidatat\",\n  \"tag\": \"reprehenderit\"\n}"
+				},
+				{
+					"id": "10357010-e2fc-4735-b7d5-c977b877eeba",
+					"name": "unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/vinit?id=53396132",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vinit"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "53396132"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"code\": 4362088,\n  \"message\": \"dolor\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "869f141f-2aec-4abb-bd50-53388d88549d",
+			"key": "baseUrl",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}
